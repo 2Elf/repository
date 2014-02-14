@@ -67,7 +67,7 @@ mysql -h localhost -P 3306  -uroot -p -e 'create database glonass default charac
 ```
 Создаём отдельного пользователя СУБД, которому выдаём соответствующие привилегии
 ```bash
-mysql -h localhost -P 3306 -uroot -p -e "GRANT ALL PRIVILEGES ON \`glonass%\`.* TO 'glow'@'localhost' IDENTIFIED BY 'evol';
+mysql -h localhost -P 3306 -uroot -p -e "GRANT ALL PRIVILEGES ON \`glonass%\`.* TO 'glow'@'localhost' IDENTIFIED BY 'evol';"
 ```
 Создаем файл локальных настроек glonass/settings/local.py путем копирования шаблона:
 ```bash
